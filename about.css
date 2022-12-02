@@ -1,0 +1,101 @@
+header{
+    position: fixed;
+    top: 0;
+}
+.about{
+    margin-top: 6rem;
+    z-index: 888;
+    margin-bottom: 3rem;
+}
+.img_container img{
+    /* width: 32rem; */
+    border-top-right-radius: 25px;
+    border-top-left-radius: 25px;
+    margin-bottom: 2rem;
+}
+.img_container{
+    display: flex;
+    align-items: center;
+    flex-flow: column wrap;
+    text-align: center;
+}
+.hurray__bg{
+    z-index: -3;
+}
+.met h3{
+    text-align: center;
+    font-size: 21px;
+    margin-bottom: 2rem;
+    background: red;
+    padding: 12px;
+}
+.parent{
+    display: grid;
+    grid-template-columns:1fr;
+}
+.meet__mom .individual{
+    width: 12rem;
+    height: 12rem;
+    border-radius: 50%;
+    /* align-self:center;
+    margin-top: -1rem; */
+}
+.meet__mom{
+    width: 100%;
+    padding: 2.5rem;
+    display: grid;
+    grid-template-columns:30% auto;  
+    align-items: center;
+}
+.dad{
+    grid-template-columns:auto 30%;  
+}
+.dad img{
+    justify-self: end;
+}
+.mom .mom_prayer{
+    justify-self: end;
+}
+.mom-prayer{
+position: relative;
+width: 100%;
+}
+.meet__mom p{
+    padding: 1.8rem;
+}
+.meet__mom p{
+    background-image: url(./right_quote.svg);
+    background-position:bottom 7% right 10%;
+    background-repeat: no-repeat;
+    background-size: 22px;
+}
+ .mom_prayer .quote{
+    position: absolute;
+    width: 22px;
+    margin-top: 12px;
+    transform: rotate(12deg);
+ }
+ .mom_prayer .close-q{
+    margin-top:-25px;
+    right: 38%;
+ }
+.message__author{
+    margin-left:80%;
+    color: var(--primary);
+    font-weight: 800;
+    border-bottom: 1px solid;
+}
+ @media screen and (max-width:590px) {
+    .meet__mom{
+        grid-template-columns:1fr;  
+    }
+    .meet__mom img {
+        justify-self: center;  
+    }
+    .meet__mom p{
+        background-position:bottom 5% right 10%;
+    }
+    .img_container{
+        padding: 0 1.5rem;
+    }
+ }

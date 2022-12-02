@@ -1,43 +1,41 @@
-.smile__tag{
-    margin-top: 15rem;
-    margin-bottom: 15rem;
-    overflow: hidden;
-}
+    
 header{
     position: fixed;
     top: 0;
 }
-.smile__kiki{
+.gallery__selector{
+    display: flex;
     width: 100%;
-    position: relative;
+    margin-top: 8rem;
+    margin-bottom: 4rem;
+    background: rgba(255, 244, 141, 0.4);
+    padding: .5rem 5rem;
+    justify-content: space-between;
+    color: rgb(51, 51, 51);
+    border-bottom: 1px solid rgb(97, 97, 97);;
 }
-.kiki__about{
-    margin: 4rem 0;
-    padding: 3rem;
-}
-.kiki__about h5{
-    font-size: 25px;
-}
-.kiki__about{
-    text-align: center;
-    font-size: 21px;
-    margin: 4rem 0;
-}
-.topper{
-    position: relative;
-    display:grid;
-    left: -13rem;
+.gallery__selector div{
     width: 100%;
-    z-index: 7;
+   display: flex;
+   justify-content: space-between;
+   position: relative;
+
 }
-.gallery2{
-    margin-top: 2rem;
-}
-.bottom{
+.gallery__selector p{
+    padding: 1rem;
     position: relative;
-    display:grid;
-    transform: rotate(180deg);
-    right:10rem;
-    width: 100%;
-    z-index: 7;
+    transition: .35s linear;
+    cursor: pointer;
+}
+.gallery__selector p:hover{
+    color: var(--primary);
+}
+.gallery__selector div .active{
+border-bottom: 2px solid rgb(235, 46, 46);
+}
+@media screen and (max-width:590px)  {
+    .gallery__selector p{
+        font-size: 9px;
+        text-align: center;
+    }
 }
