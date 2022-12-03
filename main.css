@@ -836,10 +836,7 @@ background-image: url(./DSC_1432.JPG);
     position: fixed;
    }
  
-    .kiki__event{
-        /* display: none; */
-    }
- 
+    
     .kiki__gallery div:nth-child(10){
         grid-column:1;   
     }
