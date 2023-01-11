@@ -15,5 +15,16 @@ closeMenu.addEventListener("click", () =>{
     overlay.style.display = "none"
     menu.style.transform = "rotate(90deg)"
 })
+const body = document.body
 
+const checkLoad =() =>{
+root.style.display = "flex"
+
+setTimeout(() => {
+root.style.display = "none"
+}, 3000)
+
+}
+
+body.addEventListener("onload", checkLoad())   
 
