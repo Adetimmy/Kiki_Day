@@ -15,7 +15,7 @@ background:rgba(187,236,217, 1);
 width:100vw;
 height:100vh;
 position:absolute;
-z-index:9;
+z-index:99999;
 display:flex;
 place-items:center;
 justify-content:center;
